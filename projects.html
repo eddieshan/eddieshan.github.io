@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Think, wait, code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="index.html">Think, wait, code</a></h1>
+        <nav id="menu">
+            <a href="projects.html">Projects</a>
+            <a href="writing.html">Writing</a>
+            <a href="about.html">About</a>
+        </nav>
+        <section id="info"></section>
+        <section id="content">
+            <h1>Projects</h1>
+
+            <h2>ReConstruct</h2>
+
+            <p>ReConstruct is a desktop F# WPF application for 3D volume reconstruction, which is an area of Computational Geometry.</p>
+            <p>Essentially it takes a Signed Distance Field and as input and outputs an extrapolated 3D surface.</p>
+            <p>Though I initially started this project to learn Radiological imaging techniques, the focus has shifted towards specializing in generic 3D reconstruction which has applications in many field of Science and Engineering such as terrain mapping, 3D printing, robotics and manufacturing, games, etc. Certainly a worthy undertaking.</p>
+            <p>On UI side, I needed a very lightweight scaffolding that allowed me to focus on functionality and manipulate UI elements with total freedom, without the overhead or limitations of MVVM. For this reason, I used an MVC-ish approach that is easy to reason about, allows quick UI iteration and is also light on resources.</p>
+            <p>Rendering is done with OpenGL and utilizes different strategies to achieve good performance like async/parallel processing, buffer pooling, minimizing heap allocations, SIMD, etc.</p>
+            <p></p>
+            
+            
+            
+        </section>
+    </div>
+
+</body>
+</html>

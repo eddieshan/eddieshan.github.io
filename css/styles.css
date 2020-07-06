@@ -1,0 +1,70 @@
+:root {
+    --carbon: #101010;
+    --dimmed: #656565;
+    --white: #888888;
+    --main-font-size: 16pt;
+    --small-font-size: 8pt;
+    --main-font: "Oswald", sans serif;
+    --column-left: 2.4cm;
+}
+
+body, h1, h2, h3, h4, h5 {
+    font-family: var(--main-font), sans-serif;
+    font-size: var(--main-font-size);
+    font-style: normal;
+    color: var(--white);
+    background-color: var(--carbon);
+}
+
+
+h1 {
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+h2 {
+    border-bottom: 1px solid var(--white);
+}
+
+
+h1 a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+p {
+    max-width: 40em;
+}
+
+a {
+    color: var(--white);
+}
+
+#menu {
+    justify-self: end;
+}
+
+section#content {
+    margin-top: 20px;
+    justify-self: center;
+}
+
+nav {
+}
+
+nav a {    
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+a.more:before {
+    content: "...more";    
+}
