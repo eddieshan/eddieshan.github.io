@@ -1,7 +1,7 @@
 :root {
     --carbon: #101010;
     --dimmed: #656565;
-    --white: #888888;
+    --white: #aaaaaa;
     --main-font-size: 16pt;
     --small-font-size: 8pt;
     --main-font: "Oswald", sans serif;
@@ -9,7 +9,7 @@
 }
 
 body, h1, h2, h3, h4, h5 {
-    font-family: var(--main-font), sans-serif;
+    font-family: var(--main-font);
     font-size: var(--main-font-size);
     font-style: normal;
     color: var(--white);
@@ -33,7 +33,7 @@ h1 a {
 }
 
 p {
-    max-width: 40em;
+    max-width: 35em;
 }
 
 a {
@@ -67,4 +67,20 @@ nav a {
 
 a.more:before {
     content: "...more";    
+}
+
+ul, ol {
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+ol li, ul li {
+    margin-left: 0;
+    padding-left: 0;
+    max-width: 34em;
+    margin-bottom: 6px;
+}
+
+ul li {
+    list-style: circle;
 }

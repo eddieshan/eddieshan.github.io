@@ -15,7 +15,7 @@
             <nav>
                 <a href="projects.html">Projects</a>
                 <a href="writing.html">Writing</a>
-                <a href="about.html">About</a>
+                <a href="index.html">About</a>
             </nav>
         </section>
         <section id="info"></section>
@@ -25,11 +25,46 @@
                 I secretly play with the idea of using retirement years to build the ultimate Functional Programming language. The one to rule them all and monadically bind them. Interpreted and compiled, with no GC and zero cost abstractions. It will have the performance of C, the power and purity of Haskell combined with the beautiful simplicity of Lisp. The magnificence of the tooling and eco system will rival that of the language itself. It will be, of course, cross platform. Flocks of developers will seek comfort under its shelter and a kind, enlightened community will arise. It will be awesome.
             </p>
             <p>
-                Sadly, it is not going to be that easy. The fact that most FPLs have a GC and diminished performance is not mere accident. Functional constructs come at a cost. Closures, for example, make deterministic release of memory extremely difficult.
+                Alas, if it was that easy better developers than me would have done the deed by now. The idea is not novel and there is no shortage of developers actively pursuing or dreaming about it. But what is preventing this lofty endeavour from being accomplished? FPL is an umbrella term for a number of languages that can differ significantly from each other so there is not a single answer to the question. Generally speaking though, the main challenges revolve around,                
+                <ol>
+                    <li>
+                        No GC. Arguably the biggest hurdle. With lazy evaluation and higher functional constructs next on the list.
+                        We would like to do without the burden of GC to get closer to native performance.
+                        No GC means that memory needs either to be released manually or the syntax must somehow allow a more or less implicit way of doing it.
+                        Manual memory management would clutter the syntax and diminish the abstractions so the implicit option seems preferable.
+                        I am using the term "implicit" loosely, meaning that without writing specific code to release the memory, the language enforces rules to release memory deterministically. In other words, by looking at the code we should be able to predict the life cycle of any given variable.
+                    </li>
+                    <li>
+                        Immutability.
+                    </li>
+                    <li>
+                        Higher functional constructs.
+                    </li>
+                    <li>
+                        Lazy evaluation.
+                    </li>
+                </ol>
             </p>
 
             <p>
-                There is a reason why I have not given up hope on this idea, though. There are many like minded developers who spend substantial amounts of time working in this direction. Case in point, the good folks at Rust. And as they say, where there is a will, there is way. Compiler technology keeps evolving. Hardware does as well and quantum computing will likely be a game changers.
+                There are reason why I have not given up hope on this idea, though,
+                <ul>
+                    <li>
+                        The software industry is increasingly favouring FP due to its benefits. Properly done, FP cuts down on bugs and lines of code while making solutions and code easier to design and reason about. I emphasize, when <i>properly done</i>, since it is also possible to go down the FP rabbit hole where code gets so cryptic not even the author can explain what it does, a couple of months after writing it.
+                    </li>
+                    <li>
+                        There are many like minded developers who share my conviction that we need a language like this and spend substantial amounts of time working to make it possible. As they say, where there is a will, there is way.
+                    </li>
+                    <li>
+                        Compiler technology keeps evolving. Hardware does as well and quantum computing will likely be a game changers.
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
             </p>
 
         </section>
