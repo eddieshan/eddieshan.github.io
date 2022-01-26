@@ -1,7 +1,7 @@
 :root {
     --carbon: #101010;
     --dimmed: #656565;
-    --white: #aaaaaa;
+    --white: #ffffff;
     --main-font-size: 16pt;
     --small-font-size: 8pt;
     --main-font: "Oswald", sans serif;
@@ -12,10 +12,9 @@ body, h1, h2, h3, h4, h5 {
     font-family: var(--main-font);
     font-size: var(--main-font-size);
     font-style: normal;
-    color: var(--white);
-    background-color: var(--carbon);
+    color: var(--carbon);
+    background-color: var(--white);
 }
-
 
 h1 {
     margin: 0px;
@@ -23,12 +22,12 @@ h1 {
 }
 
 h2 {
-    border-bottom: 1px solid var(--white);
+    /* border-bottom: 1px solid var(--carbon); */
 }
 
 
 h1 a {
-    color: var(--white);
+    color: var(--carbon);
     text-decoration: none;
 }
 
@@ -37,7 +36,7 @@ p {
 }
 
 a {
-    color: var(--white);
+    color: var(--carbon);
 }
 
 #menu {
@@ -46,14 +45,14 @@ a {
 
 section#content {
     margin-top: 20px;
-    justify-self: center;
+    justify-self: left;
 }
 
 nav {
 }
 
 nav a {    
-    color: var(--white);
+    color: var(--carbon);
     text-decoration: none;
     margin-left: 8px;
 }
