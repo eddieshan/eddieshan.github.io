@@ -1,0 +1,16 @@
+video {
+    display: none;
+  }
+
+img {
+  display: none;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+canvas {
+  max-width: 100%;
+}
