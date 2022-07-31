@@ -1,9 +1,5 @@
 video {
     display: none;
-  }
-
-img {
-  display: none;
 }
 
 main {
@@ -13,4 +9,5 @@ main {
 
 canvas {
   max-width: 100%;
+  transform: scale(-1, 1);
 }
